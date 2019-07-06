@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://unpkg.com/jquery"></script>
+        <script src="https://surveyjs.azureedge.net/1.0.96/survey.jquery.js"></script>
+        <link href="https://surveyjs.azureedge.net/1.0.96/survey.css" type="text/css" rel="stylesheet"/>
+        <link rel="stylesheet" href="./index.css">
+        <style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.wheel{
+				position: relative;
+				width: 676px;
+				height: 351px;
+				padding: 0 37px;
+				margin: 0 auto;
+			}
+			.wheel-model{
+				width: 650px;
+				height: 296px;
+				overflow: hidden;
+			}
+			.wheel-title{
+				line-height: 44px;
+				text-indent: 2em;
+			}
+			ul{
+				width: 1500px;
+				height: 100%;
+				transition: .5s all;
+			}
+			ul li{
+				display: inline-block;
+				vertical-align: middle;
+				width: 208px;
+				margin-right: 4px;
+				border:1px solid #ebebeb;
+				border-radius: 10px;
+				overflow: hidden;
+				padding-bottom: 13px;
+			}
+			ul li:last-child{
+				margin-right: 0;
+			}
+			ul li img{
+				
+				height:170px;
+				width:230px;
+				
+				
+				
+			}
+			ul li p:nth-child(2){
+				width: 173px;
+				
+				display: -webkit-box;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp: 4;
+				overflow: hidden;
+				color: #5f5ca9;
+				font-size: 16px;
+				line-height: 20px;
+				height: 77px;
+				margin-top:20px;
+				margin-left:65px;
+				
+				
+				
+			}
+			ul li p:nth-child(3){
+				width: 173px;
+				color: #5a6859;
+				font-size: 20px;
+				margin:55px auto 0;
+			    padding:20px 20px;
+				
+				
+			}
+			ul li p:nth-child(4){
+				width: 173px;
+				margin: 16px auto 0;
+				color: #878787;
+				font-size: 12px;
+			}
+			.wheel .btn{
+				position: absolute;
+				left: 40px;
+				top:56%;
+				bottom: 0;
+				right: 0;
+				width: 646px;
+				height: 40px;
+				margin-top: -20px;
+			}
+			.wheel .btn i{
+				position: absolute;
+				top: 0;
+				display: inline-block;
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				text-align: center;
+				line-height: 40px;
+				background: #fff;	
+				box-shadow: 0px 1px 5px 2px #EBEBEB;
+			}
+			.wheel .btn i:nth-child(1){
+				left: -20px;
+			}
+			.wheel .btn i:before{
+				content: "";
+				display: inline-block;
+				width: 8px;
+				height: 8px;
+				border-left: 1px solid #000;
+				border-bottom: 1px solid #000;
+				right: -20px;
+				transform: rotateZ(45deg);
+			}
+			.wheel .btn i:nth-child(2){
+				transform: rotateZ(-180deg);
+				right:-20px;
+			}
+		</style>
+
+    </head>
+    <body>
+        <div class="wheel">
+			<div class="wheel-title">Our Project</div>
+			<div class="wheel-model">
+				
+				<ul>
+					<li>
+						<img src="FoodDataSet1/penne carbonara.jpg"/>
+						<p>
+							health:5<br>
+                            taste:5
+						</p>
+						
+					</li>
+					<li>
+						<img src="FoodDataSet1/Steamed siew mai.jpg"/>
+						<p>
+							health:7<br>
+                            taste:5
+						</p>
+						
+					</li>
+					<li>
+						<img src="FoodDataSet1/Big Breakfast McDonalds'.jpg"/>
+						<p>
+							health:7<br>
+                            taste:4
+						</p>
+						
+					</li>
+					<li>
+						<img src="FoodDataSet1/Sausage McMuffin with egg.jpg"/>
+						<p>
+							health:7<br>
+                            taste:4
+						</p>
+						
+					</li>
+					<li>
+						<img src="FoodDataSet1/Cheese and ham bun.jpg"/>
+						<p>
+							health:6<br>
+                            taste:6
+						</p>
+						
+					</li>
+					<li>
+						<img src="FoodDataSet1/Steamed sui kow.jpg"/>
+						<p>
+							health:6<br>
+                            taste:6
+						</p>
+						
+					</li>
+					<li>
+						<img src="FoodDataSet1/Bread garlic.jpg"/>
+						<p>
+							health:6<br>
+                            taste:5
+						</p>
+						
+					</li>
+					<li>
+						<img src="FoodDataSet1/Pancake.jpg"/>
+						<p>
+							health:6<br>
+                            taste:5
+						</p>
+					</li>
+					<li>
+						<img src="FoodDataSet1/Chocolate cream roll.jpg"/>
+						<p>
+							health:6<br>
+                            taste:4
+						</p>
+						
+					</li>
+					<li>
+						<img src="FoodDataSet1/Muesli dried fruit and nuts.jpg"/>
+						<p>
+							health:5<br>
+                            taste:7
+						</p>
+						
+					</li>
+					<li>
+						<img src="FoodDataSet1/Breakfast cereal mixed contains whole grains.jpg"/>
+						<p>
+							health:5<br>
+                            taste:6
+						</p>
+						
+					</li>
+                    <li>
+                        <img src="FoodDataSet1/Red bean bun.jpg"/>
+                        <p>
+                          health:5<br>
+                          taste:6
+                         </p>
+                    </li>
+                    <li>
+                        <img src="FoodDataSet1/Bun custard.jpg"/>
+                        <p>
+                           health:5<br>
+                           taste:5
+                         </p>
+                    </li>
+                    <li>
+                       <img src="FoodDataSet1/Bun fruit glazed.jpg"/>
+                       <p>
+                          health:5 <br>
+                          taste:5
+                       </p>
+                    </li>
+                    <li>
+                       <img src="FoodDataSet1/Caesar Salad.jpg"/>
+                       <p>
+                          health:4 <br>
+                          taste:8
+                       </p>
+                    </li>
+                    <li>
+                       <img src="FoodDataSet1/Bread oat bran.jpg"/>
+                       <p>
+                          health:4 <br>
+                          taste:6
+                       </p>
+                    </li>
+                    <li>
+                       <img src="FoodDataSet1/Bread with banana and walnut.jpg"/>
+                       <p>
+                          health:4 <br>
+                          taste:6
+                       </p>
+                    </li>
+                    <li>
+                       <img src="FoodDataSet1/Bread pita.jpg"/>
+                       <p>
+                          health:4 <br>
+                          taste:5
+                       </p>
+                    </li>
+                    <li>
+                       <img src="FoodDataSet1/Bread raisin.jpg"/>
+                       <p>
+                          health:4 <br>
+                          taste:5
+                       </p>
+                    </li>
+                    <li>
+                       <img src="FoodDataSet1/Pandan bread enriched.jpg"/>
+                       <p>
+                          health:4 <br>
+                          taste:5
+                       </p>
+                    </li>
+                    
+				</ul>
+			</div>
+			<div class="btn">
+				<i></i>
+				<i></i>
+			</div>
+            <p id="lft">click_left_btn:0</p>
+            <p id="rgt">click_right_btn:0</p>
+            <div id="surveyElement"></div>
+            <div id="surveyResult"></div>
+		</div>
+        <script type="text/javascript" src="./index.js"></script>
+
+    </body>
+</html>
